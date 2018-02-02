@@ -1,0 +1,74 @@
+/* Resetear estilos por defecto del navegador */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+i:hover {
+   cursor: pointer;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 15px;
+}
+
+/* Nav */
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo__link {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container--nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.nav-bar {
+    padding: 1em 0;
+    background-color: rgba(56, 57, 58, 0.54);
+}
+
+.menu {
+    display: none;
+}
+
+.social {
+    width: 50%;
+}
+
+.icon-burger {
+    width: 50%;
+    text-align: right;
+}
+
+.icon-burger, .social {
+    margin-top: 15px;
+}
