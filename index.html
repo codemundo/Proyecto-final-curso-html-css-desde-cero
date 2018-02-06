@@ -6,36 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://file.myfontastic.com/ZRUfxHoz8VC5wAcGqEFESa/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <div class="root">
-        <nav class="nav-bar full-width">
-           <div class="container container--nav-bar">
-                <div class="logo">
-                    <h1>
-                        <a href="/index.html" class="logo__link">CodeMundo</a>
-                    </h1>
+        <header class="header full-width">
+            <nav class="nav-bar full-width">
+                <div class="container container--nav-bar">
+                    <div class="logo">
+                        <h1>
+                            <a href="/index.html" class="logo__link">CodeMundo</a>
+                        </h1>
+                    </div>
+                    <ul class="menu menu--movil">
+                        <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">SERVICES</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">GALLERY</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">PAGES</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-google-plus"></i>
+                        </a>
+                        <a href="">
+                            <i class="icon-youtube-play"></i>
+                        </a>
+                    </div>
+                    <div class="icon-burger">
+                        <i class="icon-bars icon-movil"></i>
+                    </div>
+               </div>
+            </nav>
+            <div class="header__content">
+                <h4 class="header__h4">Bienvenidos a CodeMundo</h4>
+                <h3 class="header__h3">Aprenda programación y desarrollo web con nosotros</h3>
+                <h5 class="header__h5">Suscribete a nuestro boletín informativo</h5>
+                <form class="newsletter" method="post" action="">
+                    <input type="email" class="newsletter__field" placeholder="Escriba su correo" required>
+                    <button title="submit" class="newsletter__button">Registrarse</button>
+                </form>
+            </div>            
+        </header>
+        <div class="welcome">
+            <div class="container">
+                <div class="welcome__img">
+                    <img src="/img/about_us.jpeg" alt="">
                 </div>
-               <ul class="menu">
-                    <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">SERVICES</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">GALLERY</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">PAGES</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
-                </ul>
-                <div class="social">
-                    <i class="icon-facebook"></i>
-                    <i class="icon-twitter"></i>
-                    <i class="icon-google-plus"></i>
-                    <i class="icon-youtube-play"></i>
+                <section class="welcome__info">
+                    <h3 class="welcome__title">Bienvenido a CodeMundo</h3>
+                    <h4 class="welcome__subtitle">El mejor lugar para aprender programación</h4>
+                    <p class="welcome__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aperiam sint ea repellat mollitia cum illum temporibus consequuntur asperiores adipisci fugiat molestiae tempore assumenda alias, vero libero neque, inventore sed.</p>
+                    <a href="" class="welcome__link">Sobre nosotros</a>
+                </section>                
+            </div>
+        </div>
+        <div class="heading">
+            <h3 class="heading__h3">Consejos &amp; Trucos</h3>
+            <span class="heading__span">Lorem ipsum dolor sit amet, consectetur.</span>
+        </div>
+        <div class="tips">
+            <div class="tips__info">
+                <div class="guide">
+                    <div class="guide__info">
+                        <h4 class="guide__title">Guia de viaje</h4>
+                        <p class="guide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus totam non cumque animi consectetur neque.</p>
+                    </div>
+                    <div class="guide__img">
+                        
+                    </div>
                 </div>
-                <div class="icon-burger">
-                    <i class="icon-bars icon-movil"></i>
+                <div class="trip">
+                    <div class="trip__img">
+                        
+                    </div>
+                    <div class="trip__info">
+                        <h4 class="trip__title">Viaje soñado</h4>
+                        <p class="trip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eius ut recusandae, enim, officia tempore.</p>
+                    </div>
                 </div>
-           </div>
-        </nav>
+            </div>
+            <div class="tips__img">
+                <img src="/img/couple.jpeg" alt="">
+            </div>
+        </div>
+        <div class="heading">
+            <h3 class="heading__h3">Noticias &amp; Eventos</h3>
+            <span class="heading__span">Lorem ipsum dolor sit amet, consectetur.</span>
+        </div>
+        <div class="events">
+            <div class="container">
+                <div class="event">
+                    <div class="event__img-container">
+                        <img class="event__img" src="/img/person_1.jpeg" alt="Persona 1">                        
+                    </div>
+                    <div class="event__info-container">
+                        <h5 class="event__title">Lorem ipsum dolor sit.</h5>
+                        <h6 class="event__date">04/02/2018</h6>
+                        <p class="event__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet aliquid, dolores tenetur obcaecati omnis labore voluptatibus. Libero?</p>                        
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event__img-container">
+                        <img class="event__img" src="/img/person_2.jpeg" alt="Persona 1">                        
+                    </div>
+                    <div class="event__info-container">
+                        <h5 class="event__title">Lorem ipsum dolor sit.</h5>
+                        <h6 class="event__date">04/02/2018</h6>
+                        <p class="event__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet aliquid, dolores tenetur obcaecati omnis labore voluptatibus. Libero?</p>                        
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event__img-container">
+                        <img class="event__img" src="/img/person_3.jpeg" alt="Persona 1">                        
+                    </div>
+                    <div class="event__info-container">
+                        <h5 class="event__title">Lorem ipsum dolor sit.</h5>
+                        <h6 class="event__date">04/02/2018</h6>
+                        <p class="event__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet aliquid, dolores tenetur obcaecati omnis labore voluptatibus. Libero?</p>                        
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event__img-container">
+                        <img class="event__img" src="/img/person_4.jpeg" alt="Persona 1">                        
+                    </div>
+                    <div class="event__info-container">
+                        <h5 class="event__title">Lorem ipsum dolor sit.</h5>
+                        <h6 class="event__date">04/02/2018</h6>
+                        <p class="event__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eveniet aliquid, dolores tenetur obcaecati omnis labore voluptatibus. Libero?</p>                        
+                    </div>
+                </div>                  
+            </div>
+        </div>
+        <div class="services">
+            <div class="heading">
+                <h3 class="heading__h3">Services</h3>
+                <span class="heading__span">Lorem ipsum dolor sit amet, consectetur.</span>
+            </div>
+            <div class="container">
+                <div class="service margin-top-0">
+                    <i class="service__icon icon-calendar-check"></i>
+                    <h3 class="service__title">Reservación de hotel</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+                <div class="service margin-top-0">
+                    <i class="service__icon icon-fighter-jet"></i>
+                    <h3 class="service__title">Vuelos</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+                <div class="service margin-top-0">
+                    <i class="service__icon icon-car"></i>
+                    <h3 class="service__title">Renta de carros</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+                <div class="service">
+                    <i class="service__icon icon-male"></i>
+                    <h3 class="service__title">Guia de turista</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+                <div class="service">
+                    <i class="service__icon icon-file-text"></i>
+                    <h3 class="service__title">Seguro de viaje</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+                <div class="service">
+                    <i class="service__icon icon-bus"></i>
+                    <h3 class="service__title">Elección de tours</h3>
+                    <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad magnam, autem facilis blanditiis, reiciendis tempora qui aliquam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <h3 class="heading__h3">Testimonios</h3>
+            <span class="heading__span">Lorem ipsum dolor sit amet, consectetur.</span>
+        </div>
+        <div class="testimonials">
+            <div class="container">
+                <div class="testimony">
+                    <div class="testimony__img-container">
+                        <img src="/img/person_1.jpeg" alt="" class="testimony__img">
+                    </div>
+                    <div class="testimony__info-container">
+                        <h4 class="testimony__title">Richard</h4>
+                        <h5 class="testimony__subtitle">Subtítulo aquí</h5>
+                        <p class="testimony__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque possimus explicabo voluptate iure facere. Debitis nemo adipisci nulla vel libero.</p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testimony__img-container">
+                        <img src="/img/person_2.jpeg" alt="" class="testimony__img">
+                    </div>
+                    <div class="testimony__info-container">
+                        <h4 class="testimony__title">Juana</h4>
+                        <h5 class="testimony__subtitle">Subtítulo aquí</h5>
+                        <p class="testimony__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque possimus explicabo voluptate iure facere. Debitis nemo adipisci nulla vel libero.</p>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testimony__img-container">
+                        <img src="/img/person_3.jpeg" alt="" class="testimony__img">
+                    </div>
+                    <div class="testimony__info-container">
+                        <h4 class="testimony__title">Sergio</h4>
+                        <h5 class="testimony__subtitle">Subtítulo aquí</h5>
+                        <p class="testimony__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque possimus explicabo voluptate iure facere. Debitis nemo adipisci nulla vel libero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__info">
+                    &copy;2018 CodeMundo. Todos los derechos reservados
+                </p>                
+            </div>
+        </footer>   
     </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
