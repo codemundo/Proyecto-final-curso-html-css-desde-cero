@@ -284,6 +284,42 @@ body {
     cursor: pointer;
 }
 
+@media screen and (min-width: 992px) {
+    .header {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .header__content {
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .header__content {
+        max-width: 900px;
+    }
+
+    .header__h4 {
+        font-size: 45px;
+    }
+
+    .header__h3 {
+        font-size: 35px;
+    }
+
+    .header__h5 {
+        font-size: 25px;
+    }
+
+    .newsletter__field {
+        font-size: 20px;
+    }
+
+    .newsletter__button {
+        font-size: 22px;
+    }
+}
+
 /* Sección Bienvenida */
 
 .welcome__info {
@@ -327,7 +363,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .welcome > .container {
+    .container--welcome {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -396,7 +432,7 @@ body {
 
 .guide__img {
     background-image: url('/img/guide.jpeg');
-    background-size: cover
+    background-size: cover;
 }
 
 .guide__info:after, .trip__info:before {
@@ -428,13 +464,23 @@ body {
 
 .trip__img {
     background-image: url('/img/dream_trip.jpeg');
-    background-size: cover
+    background-size: cover;
 }
 
 .trip__info:before {
     top: -26px;
     border-bottom-color: #83c518;
     border-top-color: transparent;
+}
+
+.guide__info, .guide__img, .trip__img, .trip__info {
+    min-height: 250px;
+}
+
+.tips__img {
+    background-image: url('/img/couple.jpeg');
+    background-size: cover;
+    min-height: 300px;
 }
 
 @media screen and (min-width: 576px) {
@@ -451,8 +497,20 @@ body {
         width: 50%;
     }
     
-    .guide__info, .guide__img, .trip__img, .trip__info {
-        min-height: 250px;
+    .tips__img {
+        min-height: 450px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tips {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .tips__img, .tips__info {
+        width: 50%;
     }
 }
 
@@ -535,6 +593,32 @@ body {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .container--events {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .event {
+        width: 50%;
+    }
+
+    .event:nth-child(1), .event:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event:nth-child(2), .event:nth-child(4) {
+        padding-left: 15px;
+    }
+
+    .event:nth-child(1), .event:nth-child(3) {
+        padding-right: 15px;
+    }
+}
+
 /* Servicios */
 
 .services {
@@ -543,6 +627,7 @@ body {
     background-attachment: fixed;
     position: relative;
     z-index: 1;
+    padding: 15px 0;
 }
 
 .services:before {
@@ -581,7 +666,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .services > .container {
+    .container--services {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -645,6 +730,27 @@ body {
     .testimony__info-container {
         width: calc(100% - 150px);
         padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container--testimonials {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .testimony {
+        width: 33.3%;
+        padding: 0 5px;
+    }
+
+    .testimony:first-child {
+        padding-left: 0;
+    }
+
+    .testimony:last-child {
+        padding-right: 0;
     }
 }
 
