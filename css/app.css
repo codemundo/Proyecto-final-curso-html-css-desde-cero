@@ -57,7 +57,7 @@ body {
     color: white;
 }
 
-.welcome, .header, .events, .services {
+.welcome, .header, .events, .services, .testimonials {
     margin-bottom: 20px;
 }
 
@@ -484,6 +484,10 @@ body {
 }
 
 @media screen and (min-width: 576px) {
+    .tips {
+        padding: 0;
+        margin-bottom: 20px;
+    }
     .tips__info {
         display: -webkit-box;
         display: -ms-flexbox;
